@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Tech Startup Newsletter</title>
+    <title>Centered Startup Newsletter</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -46,8 +46,8 @@
             line-height: inherit;
         }
 
-        /* Custom styles */
-        body {
+        /* Custom styles for centering */
+            body {
             background-color: #f5f7fa;
             font-family: Arial, sans-serif;
             display: flex;
@@ -76,43 +76,37 @@
             max-width: 560px;
             height: auto;
         }
-
-        /* Multi-column layout */
-        .two-column, .three-column {
-            width: 100%;
-        }
         
+        /* multi-column layout */
+        .two-column, .three-column {
+          width: 100%;
+        }
+        .two-column td {
+          width: 50%;
+        }
+        .three-column td{
+          width: 33.33%;
+        }
         .two-column td, .three-column td {
             vertical-align: top;
             padding: 15px;
         }
         
-        .two-column td {
-            width: 50%;
-        }
-        
-        .three-column td {
-            width: 33.33%;
-        }
-        
-        /* Responsive styles */
         @media only screen and (max-width: 480px) {
-            .two-column td, .three-column td {
-                display: block !important;
-                width: 100% !important;
-                padding: 10px 20px !important;
-            }
-            
-            .responsive-text {
-                font-size: 14px !important;
-            }
-            
-            .responsive-heading {
-                font-size: 20px !important;
-            }
+          .two-column td, .three-column td {
+            display: block !important;
+            width: 100% !important;
+            padding: 10px 20px !important;
+          }
+          
+          .responsive-text {
+            font-size: 14px !important;
+          }
+          .responsive-heading {
+            font-size: 20px !important;
+          }
         }
-        
-        /* Interactive elements */
+
         .interactive-btn {
             display: inline-block;
             background-color: #ff3bb4;
@@ -132,7 +126,6 @@
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        
         .interactive-link {
             color: #ff3bb4;
             text-decoration: none;
@@ -144,53 +137,13 @@
             color: #9f248e !important;
             border-bottom: 1px solid #9f248e;
         }
-        
-        /* Animation keyframes */
-        @keyframes slideIn {
-            0% {
-                transform: translateX(-20px);
-                opacity: 0;
-            }
-            100% {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-        
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
-            }
-        }
-        
-        .animated {
-            animation-duration: 0.5s;
-            animation-fill-mode: both;
-        }
-        
-        .slide-in {
-            animation-name: slideIn;
-        }
-        
-        .bounce {
-            animation-name: bounce;
-        }
-        
-        /* Checkbox technique */
+        /* Checkbox */
         .toggle-container {
             margin: 20px 0;
         }
-        
         .toggle-checkbox {
             display: none;
         }
-        
         .toggle-label {
             display: inline-block;
             background-color: #f0f0f0;
@@ -199,12 +152,10 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
-        
         .toggle-checkbox:checked + .toggle-label {
             background-color: #ff3bb4;
             color: white;
         }
-        
         .toggle-content {
             display: none;
             padding: 15px;
@@ -212,12 +163,9 @@
             border-radius: 8px;
             margin-top: 10px;
         }
-        
         .toggle-checkbox:checked ~ .toggle-content {
             display: block;
         }
-        
-        /* Radio button technique */
         .tab-container {
             margin: 20px 0;
         }
@@ -239,7 +187,6 @@
             background-color: #ff3bb4;
             color: white;
         }
-        
         .tab-content {
             display: none;
             padding: 15px;
@@ -252,6 +199,7 @@
         #tab3:checked ~ #content3 {
             display: block;
         }
+        
     </style>
 </head>
     
@@ -263,7 +211,7 @@
           <tr>
             <td align="center" style="padding: 30px 20px 20px 20px;">
               <!-- Logo -->
-              <img src="images/Logo1.png" alt="Logo" alt="Tech Logo" width="200" />
+              <img src="images/Logo1.png" alt="Logo" width="200" />
             </td>
           </tr>
           
@@ -285,29 +233,29 @@
             </td>
           </tr>
           
-          <!-- Body -->
+          <!-- Body with Background -->
           <tr>
             <td align="left" class="highlight" style="font-size:16px; line-height:1.5; color:#444; padding:10px 20px">
-              <p class="responsive-text">
+              <p class= "responsive-text">
             Get the latest in tech innovation, startup launches, and industry trends.
             Each edition highlights emerging companies, breakthrough products, and market shifts that are shaping the future of technology.
-            From artificial intelligence and fintech to green energy and consumer apps, we bring you in-depth coverage of what's new and what's next.
-            Stay ahead of the curve with curated insights, expert analysis, and practical resources designed to keep you informed and inspire. Delivered straight to your inbox every week.
+            From artificial intelligence and fintech to green energy and consumer apps, we bring you in-depth coverage of what’s new and what’s next.
+            Stay ahead of the curve with curated insights, expert analysis, and practical resources designed to keep you informed and inspire. Delivered straight to your inbox every weekclass.
           </p>
             </td>
           </tr>
           
-          <!-- Two Column Component -->
+          <!-- Two column component -->
           <tr>
             <td style="padding: 20px;">
               <table class="two-column" border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td style="background-color: #f9f7ff; border-radius: 8px;">
+                  <td style="background-color: #f9f7ff; border-radius: 16px;">
                     <h3 class="responsive-heading" style="color: #6a11cb; margin-top: 0;">AI Startups</h3>
                     <p class="responsive-text">Discover how artificial intelligence is transforming industries with innovative solutions and cutting-edge applications.</p>
                     <a href="#" class="interactive-btn" style="font-size: 14px; padding: 8px 16px;">Explore</a>
                   </td>
-                  <td style="background-color: #fff7f9; border-radius: 8px;">
+                  <td style="background-color: #fff7f9; border-radius: 16px;">
                     <h3 class="responsive-heading" style="color: #ff3bb4; margin-top: 0;">Green Tech</h3>
                     <p class="responsive-text">Learn about sustainable startups that are developing eco-friendly technologies for a better future.</p>
                     <a href="#" class="interactive-btn" style="font-size: 14px; padding: 8px 16px; background-color: #6a11cb;">Learn More</a>
@@ -342,7 +290,6 @@
             </td>
           </tr>
           
-          <!-- Interactive Checkbox Section -->
           <tr>
             <td style="padding: 20px;">
               <div class="toggle-container">
@@ -350,7 +297,7 @@
                 <label for="toggle1" class="toggle-label">Show Weekly Highlights</label>
                 <div class="toggle-content">
                   <p class="responsive-text">This week's top startups:</p>
-                  <ul style="text-align: left;">
+                  <ul style="text-align: left">
                     <li class="responsive-text">NeuroTech AI - Revolutionizing brain-computer interfaces</li>
                     <li class="responsive-text">SolarFlare - Affordable solar solutions for urban areas</li>
                     <li class="responsive-text">HealthBot - AI-powered personalized healthcare</li>
@@ -362,10 +309,10 @@
           
           <!-- Interactive Radio Button Tabs -->
           <tr>
-            <td style="padding: 20px;">
-              <div class="tab-container">
-                <input type="radio" name="tabs" id="tab1" class="tab-radio" checked>
-                <label for="tab1" class="tab-label">Tech News</label>
+            <td style="padding: 20px">
+              <div class="tab-containter">
+                <input type="radio" name="tabs" id="tab1" class="tab-radio">
+                <label for="tab1" class="tab-label">tech news</label>
                 
                 <input type="radio" name="tabs" id="tab2" class="tab-radio">
                 <label for="tab2" class="tab-label">Startup Spotlight</label>
@@ -376,13 +323,11 @@
                 <div id="content1" class="tab-content">
                   <p class="responsive-text">Quantum computing breakthroughs are accelerating, with three startups announcing major advances in qubit stability this month. Industry experts predict commercial applications within 2-3 years.</p>
                 </div>
-                
                 <div id="content2" class="tab-content">
-                  <p class="responsive-text">This month's spotlight: EcoCharge, developing wireless charging technology for electric vehicles. Their innovative approach could eliminate the need for charging stations altogether.</p>
+                  <p class="responsive-text">Quantum computing breakthroughs are accelerating, with three startups announcing major advances in qubit stability this month. Industry experts predict commercial applications within 2-3 years.</p>
                 </div>
-                
                 <div id="content3" class="tab-content">
-                  <p class="responsive-text">Recent funding highlights: AI security firm ShieldTech raised $45M Series B, while biotech startup GeneCure secured $32M to advance their gene therapy platform.</p>
+                  <p class="responsive-text">Quantum computing breakthroughs are accelerating, with three startups announcing major advances in qubit stability this month. Industry experts predict commercial applications within 2-3 years.</p>
                 </div>
               </div>
             </td>
@@ -390,17 +335,14 @@
           
           <!-- Button -->
           <tr>
-            <td class="button" align="center" style="padding: 40px 20px;">
-            <!-- Primary Button -->
-            <a href="#" class="interactive-btn animated slide-in">
-            Join Now
-            </a>
-    
-            <!-- Secondary Button -->
-            <a href="#" class="interactive-btn animated slide-in" style="background-color:#ffffff; color:#ff3bb4; border:2px solid #ff3bb4; margin-left: 10px;">
-              Learn More
-            </a>
-          </td>
+            <td class="button" align="center" style="padding: 20px 40px">
+              <a href="#" class="interactive-btn animated slide-in" style="background-color: fff7f9">
+                Join Now
+              </a>
+              <a href="#" class="interactive-btn animated slide-in" style="background-color:#ffffff; color:#ff3bb4; border:2px solid #ff3bb4; margin-left: 10px;">
+                Learn More
+                </a>
+            </td>
         </tr>
 
           
